@@ -1,0 +1,374 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba8bd7f5969f7aa49a1a008dae361614, type: 3}
+  m_Name: DialogueGraph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 114502860618711680}
+  - {fileID: 114507047557403924}
+  - {fileID: 114803855716686010}
+  - {fileID: 114461062435961612}
+  - {fileID: 114974110520926784}
+  - {fileID: 114837072179071716}
+  LocalizationList: {fileID: 11400000, guid: 4218bf0038a82a443b04c4cea71dde4e, type: 2}
+  TargetDialogue: {fileID: 114502860618711680}
+--- !u!114 &114461062435961612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220052de4ac5f1e4f8e9c1fb58300149, type: 3}
+  m_Name: Dialogue Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 344, y: -232}
+  ports:
+    keys:
+    - Input
+    - Output
+    - instanceInput_0
+    values:
+    - _fieldName: Input
+      _node: {fileID: 114461062435961612}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: instanceInput_0
+        node: {fileID: 114507047557403924}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 114461062435961612}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: instanceInput_0
+      _node: {fileID: 114461062435961612}
+      _typeQualifiedName: DialogueNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 1
+  isFirstNode: 0
+  TextKey: 3
+  answers:
+  - TextKey: 11
+    portName: instanceInput_0
+--- !u!114 &114502860618711680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220052de4ac5f1e4f8e9c1fb58300149, type: 3}
+  m_Name: Dialogue Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -664, y: -184}
+  ports:
+    keys:
+    - Input
+    - Output
+    - instanceInput_0
+    - instanceInput_1
+    values:
+    - _fieldName: Input
+      _node: {fileID: 114502860618711680}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: instanceInput_0
+        node: {fileID: 114837072179071716}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 114502860618711680}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: instanceInput_0
+      _node: {fileID: 114502860618711680}
+      _typeQualifiedName: DialogueNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: 114507047557403924}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 1
+    - _fieldName: instanceInput_1
+      _node: {fileID: 114502860618711680}
+      _typeQualifiedName: DialogueNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: 114803855716686010}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 1
+  isFirstNode: 1
+  TextKey: 0
+  answers:
+  - TextKey: 6
+    portName: instanceInput_0
+  - TextKey: 7
+    portName: instanceInput_1
+--- !u!114 &114507047557403924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220052de4ac5f1e4f8e9c1fb58300149, type: 3}
+  m_Name: Dialogue Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -152, y: -264}
+  ports:
+    keys:
+    - Input
+    - Output
+    - instanceInput_0
+    values:
+    - _fieldName: Input
+      _node: {fileID: 114507047557403924}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: instanceInput_0
+        node: {fileID: 114502860618711680}
+        reroutePoints: []
+      - fieldName: instanceInput_0
+        node: {fileID: 114974110520926784}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 114507047557403924}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: instanceInput_0
+      _node: {fileID: 114507047557403924}
+      _typeQualifiedName: DialogueNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: 114461062435961612}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 1
+  isFirstNode: 0
+  TextKey: 1
+  answers:
+  - TextKey: 8
+    portName: instanceInput_0
+--- !u!114 &114803855716686010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220052de4ac5f1e4f8e9c1fb58300149, type: 3}
+  m_Name: Dialogue Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -168, y: 328}
+  ports:
+    keys:
+    - Input
+    - Output
+    - instanceInput_0
+    - instanceInput_1
+    values:
+    - _fieldName: Input
+      _node: {fileID: 114803855716686010}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: instanceInput_1
+        node: {fileID: 114502860618711680}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 114803855716686010}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: instanceInput_0
+      _node: {fileID: 114803855716686010}
+      _typeQualifiedName: DialogueNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: 114974110520926784}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 1
+    - _fieldName: instanceInput_1
+      _node: {fileID: 114803855716686010}
+      _typeQualifiedName: DialogueNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: 114837072179071716}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 1
+  isFirstNode: 0
+  TextKey: 2
+  answers:
+  - TextKey: 9
+    portName: instanceInput_0
+  - TextKey: 10
+    portName: instanceInput_1
+--- !u!114 &114837072179071716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220052de4ac5f1e4f8e9c1fb58300149, type: 3}
+  m_Name: Dialogue Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 360, y: 376}
+  ports:
+    keys:
+    - Input
+    - Output
+    - instanceInput_0
+    values:
+    - _fieldName: Input
+      _node: {fileID: 114837072179071716}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: instanceInput_1
+        node: {fileID: 114803855716686010}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 114837072179071716}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: instanceInput_0
+      _node: {fileID: 114837072179071716}
+      _typeQualifiedName: DialogueNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: 114502860618711680}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 1
+  isFirstNode: 0
+  TextKey: 5
+  answers:
+  - TextKey: 13
+    portName: instanceInput_0
+--- !u!114 &114974110520926784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220052de4ac5f1e4f8e9c1fb58300149, type: 3}
+  m_Name: Dialogue Node
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 344, y: 72}
+  ports:
+    keys:
+    - Input
+    - Output
+    - instanceInput_0
+    values:
+    - _fieldName: Input
+      _node: {fileID: 114974110520926784}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: instanceInput_0
+        node: {fileID: 114803855716686010}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 114974110520926784}
+      _typeQualifiedName: DialogueNode+Connection, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: instanceInput_0
+      _node: {fileID: 114974110520926784}
+      _typeQualifiedName: DialogueNode, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      connections:
+      - fieldName: Input
+        node: {fileID: 114507047557403924}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _dynamic: 1
+  isFirstNode: 0
+  TextKey: 4
+  answers:
+  - TextKey: 12
+    portName: instanceInput_0

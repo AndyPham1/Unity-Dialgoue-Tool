@@ -1,0 +1,4 @@
+The dialogue graph holds a reference to the language data (localization list: tools 2 app asset). 
+The dialogue node and editor references dialogue via keys (it uses references through parent graph).
+The dialogue localization is a component to set up the reply button and the main dialogue appropriately; it takes
+an input of dialogue graph to get the data and to coordinate the replies and main dialogue.
